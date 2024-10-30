@@ -1,0 +1,244 @@
+body {
+  padding: 50px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../imgs/img4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  width: 90vw;
+  height: 50vh;
+  margin-top: 1rem;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1rem;
+  padding: 20px;
+}
+
+.hebrew-with {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: rgb(146, 134, 70);
+}
+
+.welcome-text {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: black;
+
+  animation-name: wipe;
+  animation-duration: 1s;
+}
+@keyframes wipe {
+  0% {
+    transform: scale(0, 0.001);
+  }
+  50% {
+    transform: scale(1, 0.001);
+  }
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: rgb(113, 113, 113);
+}
+
+.paragraph.last {
+  color: black;
+}
+
+.title {
+  list-style: none;
+  font-weight: 600;
+}
+
+.descrip {
+  font-weight: 20;
+}
+
+.text-header {
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+
+  /* animation-name: wipe;
+    animation-duration: 1s; */
+}
+.active {
+  animation-name: wipe;
+  animation-duration: 500ms;
+}
+
+@keyframes wipe {
+  0% {
+    transform: scale(0, 0.001);
+  }
+  50% {
+    transform: scale(1, 0.001);
+  }
+}
+
+/* .active {
+    animation-name: slideUp;
+    animation-duration: 2s;
+  }
+  @keyframes slideUp {
+    from {
+      transform: translatey(600px);
+    }
+  } */
+/* @keyframes headerAnima {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  } */
+
+.speak-hebrew {
+  margin-top: 2rem;
+  border-radius: 30px;
+  height: 80vh;
+  align-self: center;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 5px;
+  height: 100px;
+  width: 60vw;
+  font-size: 1.3rem;
+  background-color: rgb(145, 69, 106);
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(145, 69, 106),
+    rgb(255, 255, 255)
+  );
+}
+
+.contact-methods-container {
+  display: flex;
+  justify-content: space-around;
+  width: 15rem;
+  height: 55px;
+  margin-top: 0.7rem;
+  box-sizing: border-box;
+}
+
+.svgs {
+  width: 40px;
+  height: 40px;
+}
+
+#whatsapp {
+  fill: black;
+}
+
+.whatsapp-link {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+.whatsapp-link:hover {
+  width: 60px;
+  height: 60px;
+
+  animation-name: enlarge;
+  animation-duration: 1s;
+}
+
+@keyframes enlarge {
+  /* 0% {
+    transform: rotate(30deg);
+} */
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.email-link {
+  width: 40px;
+  height: 40px;
+}
+
+.email-link:hover {
+  width: 60px;
+  height: 60px;
+
+  animation-name: enlarge;
+  animation-duration: 1s;
+}
+
+@keyframes enlarge {
+  50% {
+    transform: rotate(30deg);
+  }
+}
+
+.students-quotes {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 100%;
+}
+
+.quote-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 20px 20px 0px 20px;
+  
+  position: relative;
+  width: 40%;
+  /* height: auto; */
+  
+  border-radius: 20px;
+  background-color: antiquewhite;
+  color: rgb(60, 60, 60);
+  
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.quote-svg {
+  position: absolute;
+  top: -20px;
+}
+
+.student-name {
+  width: 70%;
+  position: relative;
+  /* transform: translateX(14rem); */
+}
+
+.last-quote {
+  align-self: flex-start;
+}

@@ -1,0 +1,259 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  
+}
+
+header {
+  background-image: url(../imgs/img4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 30vh;
+  margin-top: 1rem;
+  margin: 0 auto;
+
+}
+
+.about-section {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1rem;
+  padding: 20px;
+  background-image: linear-gradient(
+    white,
+    lightblue 10% 30%,
+    rgba(144, 238, 144, 0.68),
+    beige
+  );
+  
+}
+
+.hebrew-with {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-variant: small-caps;
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: rgb(146, 134, 70);
+}
+
+.welcome-text {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: black;
+
+  animation-name: wipe;
+  animation-duration: 1s;
+}
+@keyframes wipe {
+  0% {
+    transform: scale(0, 0.001);
+  }
+  50% {
+    transform: scale(1, 0.001);
+  }
+}
+
+.paragraph {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: rgb(60, 60, 60);
+  box-shadow: 10px 10px 19px 10px;
+  padding: 12px;
+}
+
+.paragraph.last {
+  color: black;
+}
+
+.title {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.descrip {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.text-header {
+  margin-top: 2rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+
+  /* animation-name: wipe;
+  animation-duration: 1s; */
+}
+.active {
+  animation-name: wipe;
+  animation-duration: 800ms;
+}
+
+@keyframes wipe {
+  0% {
+    transform: scale(0, 0.001);
+  }
+  50% {
+    transform: scale(1, 0.001);
+  }
+}
+
+/* .active {
+  animation-name: slideUp;
+  animation-duration: 2s;
+}
+@keyframes slideUp {
+  from {
+    transform: translatey(600px);
+  }
+} */
+/* @keyframes headerAnima {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+} */
+
+.speak-hebrew {
+  margin-top: 4rem;
+  border-radius: 30px;
+  height: 80%;
+  width: 90%;
+  align-self: center;
+  /* box-shadow: 0px 0px 50px 20px white; */
+
+  /* animation-name: scrollImg; */
+  animation-duration: 1s;
+  animation-timeline: view(300px, -10px);
+}
+
+@keyframes scrollImg {
+  0% {
+    transform: scale(0, 0.01);
+  }
+
+  100% {
+    transform: scale(1, 0.01);
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: rgba(167, 224, 224, 0.5);
+  /* background-image: linear-gradient(
+    to bottom left,
+    rgb(145, 69, 106),
+    rgb(255, 255, 255)
+  ); */
+}
+
+.contact-methods-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 30%;
+  margin-top: 0.7rem;
+}
+
+.svgs {
+  width: 40px;
+  height: 40px;
+}
+
+#whatsapp {
+  fill: black;
+}
+
+.whatsapp-link {
+  width: 60px;
+  height: 60px;
+  animation-name: enlarge;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes enlarge {
+  0% {
+    transform: rotate(40deg);
+  }
+}
+
+/* .email-link {
+    width: 60px;
+    height: 60px;
+  
+    animation-name: enlarge;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 5;
+  }
+  
+  @keyframes enlarge {
+    0% {
+      transform: rotateX(30deg);
+  }
+  50% {
+        transform: rotateX(15deg);
+    }
+
+    100% {
+        transform: rotateX(30deg);
+
+    }
+  } */
+.students-quotes {
+    padding: 20px;
+}
+
+.quote-container {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: rgb(60, 60, 60);
+  padding: 20px;
+  border-radius: 5%;
+  padding-top: 40px;
+  font-style: italic;
+  position: relative;
+  height: auto;
+  background-color: antiquewhite;
+
+}
+
+.quote-svg {
+  position: absolute;
+  top: -20px;
+  
+}
+
+.student-name {
+    width: 50%;
+    position: relative;
+    transform: translateX(4rem);
+}
